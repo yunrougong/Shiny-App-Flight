@@ -11,8 +11,8 @@ shinyServer(function(input, output){
       gvisLineChart(
         data=annual,xvar = "Year",yvar=c("TotalFlights","TotalPassengers"),
         options=list(series="[{targetAxisIndex: 0},
-                     {targetAxisIndex:1}]",
-                     colors=c("#99ccff","orange"),
+                     {targetAxisIndex: 1}]",
+                     colors="['#8424E9','orange']",
                      width="1000px", height="500px",
                      vAxes="[{title:'Number of Flights'},{title:'Number of Passengers'}]",
                      hAxes="[{title:'Year'}]",
